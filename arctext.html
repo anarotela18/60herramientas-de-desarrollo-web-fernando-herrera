@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ARCTEXT.js</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Estilos de la master -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/estilo.css">
+
+
+
+    <!-- Estilos de los recursos adicionales -->
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Master</h1>
+            <p class="lead">Descripción del recurso en el siguiente link:
+                <a href="http://tympanus.net/codrops/2012/01/24/arctext-js-curving-text-with-css3-and-jquery/" target="_blank">http://tympanus.net/codrops/2012/01/24/arctext-js-curving-text-with-css3-and-jquery/</a>
+            </p>
+
+
+            <h2 id="txtArc">Hola mundo desde udemy</h2>
+
+            <!-- Editar desde aquí  -->
+
+
+
+            <!-- Hasta aquí modificaremos -->
+        </div>
+    </div>
+
+    <!-- Librerías adicionales -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Librerías de plugins -->
+
+
+    <!-- Archivo personalizado de Javascript -->
+    <script src="lib/curso.js"></script>
+
+    <script type="text/javascript" src="plugins/arctext/jquery.arctext.js"></script>
+
+    <script>
+        var $texto = $("#txtArc");
+        // $texto.arctext({
+        //     radius: 300
+        // });
+
+        $texto.arctext({
+            radius: 300,
+            // dir: -1
+        });
+
+        // $texto.arctext({
+        //     radius: 300,
+        //     rotate: false
+        // });
+
+        setTimeout(function() {
+            $texto.arctext('set', {
+                radius: 300,
+                dir: -1,
+                animation: {
+                    speed: 300,
+                    easing: 'ease-out'
+                }
+            });
+        }, 1000);
+    </script>
+</body>
+
+</html>
