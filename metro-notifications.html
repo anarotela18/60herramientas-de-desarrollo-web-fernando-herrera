@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Metro Notifications</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Estilos de la master -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/estilo.css">
+    <!-- Estilos de los recursos adicionales -->
+
+    <!-- jQuery Basic Library ( you can use your own version ) -->
+    <script src="static/js/jquery-1.11.1.min.js"></script>
+
+    <!-- Metro Notification Style -->
+    <link rel="stylesheet" type="text/css" href="Metro+Notification+v7/5. Min Files and Structure/static/css/MetroNotificationStyle.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Master</h1>
+            <p class="lead">Descripción del recurso en el siguiente link:
+            </p>
+        </div>
+        <!-- Editar desde aquí  -->
+
+        <!-- Hasta aquí modificaremos -->
+    </div>
+
+
+    <!-- Librerías adicionales -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Librerías de plugins -->
+
+
+    <!-- Archivo personalizado de Javascript -->
+    <script src="lib/curso.js"></script>
+
+    <!-- Metro Notification JS -->
+    <script src="Metro+Notification+v7/5. Min Files and Structure/static/js/MetroNotification.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.smallBox({
+                title: 'Hola Mundo',
+                content: "Este es el cuerpo de la notificación... puedo escribir lo que sea..",
+                fa: "fa-star-o",
+                sound: true,
+                color: "#6B1BA1",
+                buttons: ["Aceptar", "Cancelar"],
+            }, function(action, button) {
+                // do something here
+                alert(action + ' ' + button)
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

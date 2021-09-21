@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Yose Modal</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Estilos de la master -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/estilo.css">
+    <!-- Estilos de los recursos adicionales -->
+
+    <!-- Yose Modal Style -->
+    <link rel="stylesheet" href="yose-modal/4. Main Files/static/css/yosemodal.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Master</h1>
+            <p class="lead">Descripción del recurso en el siguiente link:
+            </p>
+        </div>
+        <!-- Editar desde aquí  -->
+
+        <!-- Hasta aquí modificaremos -->
+    </div>
+
+
+    <!-- Librerías adicionales -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Librerías de plugins -->
+
+
+    <!-- Archivo personalizado de Javascript -->
+    <script src="lib/curso.js"></script>
+
+    <script src="yose-modal/4. Main Files/static/js/gsap.js"></script>
+
+    <!-- Yose Modal JS -->
+    <script src="yose-modal/4. Main Files/static/js/yosemodal.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.yosemodal({
+                title: "Some title",
+                width: "500px",
+                height: "300px",
+                favicon: "fa-music",
+            });
+        });
+    </script>
+
+</body>
+
+</html>
