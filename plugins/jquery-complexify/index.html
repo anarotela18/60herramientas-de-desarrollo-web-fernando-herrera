@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Complexify</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+
+    <h1>jquery Complexify
+        <a href="https://makitweb.com/password-strength-checker-with-jquery-complexify/" target="_blank">Referencia del plugin: https://makitweb.com/password-strength-checker-with-jquery-complexify/</a>
+    </h1>
+
+
+    <input type="text" id="txtPass" class="form-control">
+
+    <div class="progress">
+        <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+            <span class="sr-only">% Complete</span>
+        </div>
+    </div>
+
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="./jquery.complexify.banlist.js"></script>
+    <script src="./jquery.complexify.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $("#txtPass").complexify({}, function(valid, complexity) {
+            console.log(valid, complexity);
+
+            var $progressBar = $("#progressBar");
+
+            $progressBar.css('width', complexity + '%');
+
+            if (complexity >= 40) {
+                $progressBar
+                    .addClass('progress-bar-success')
+                    .removeClass('progress-bar-danger');
+            } else {
+                $progressBar
+                    .addClass('progress-bar-danger')
+                    .removeClass('progress-bar-success');
+            }
+        });
+    </script>
+</body>
+
+</html>

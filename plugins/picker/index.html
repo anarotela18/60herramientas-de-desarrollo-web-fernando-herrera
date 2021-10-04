@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picker</title>
+    <link rel="stylesheet" href="themes/default.css">
+    <link rel="stylesheet" href="themes/default.date.css">
+
+</head>
+
+<body>
+    <h1>Picker link de referencia: </h1>
+    <a href="https://amsul.ca/pickadate.js/date/" target="_blank">https://amsul.ca/pickadate.js/date/</a>
+
+    <input type="text" class="fecha" id="txtFecha">
+    <br><br>
+    <input id="btnObtener" type="button" value="obtener valor" class="btn btn-primary">
+
+
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="./picker.js"></script>
+    <script src="./picker.date.js"></script>
+    <script src="./translations/es_ES.js"></script>
+    <script>
+        $('.fecha').pickadate();
+
+
+        $("#btnObtener").on('click', function() {
+            var valor = $('#txtFecha').val();
+            console.log(valor);
+        });
+    </script>
+</body>
+
+</html>

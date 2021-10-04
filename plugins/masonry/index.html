@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonry</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <style>
+        html,
+        body {
+            background-color: #e9e9e9;
+        }
+        
+        .grid-item {
+            width: 300px;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .grid-item p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body class="container">
+
+    <h1>Masonry
+        <a href="https://masonry.desandro.com/" target="_blank">Referencia del plugin: https://masonry.desandro.com/</a>
+    </h1>
+
+    <div class="grid">
+        <div class="grid-item">
+            <img src="./imagen1.jpeg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="./imagen2.jpeg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="./imagen3.jpeg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="./imagen1.jpeg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="./imagen2.jpeg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="./imagen3.jpeg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="./imagen1.jpeg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="./imagen2.jpeg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="./imagen3.jpeg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../plugins/masonry/masonry.pkgd.min.js"></script>
+    <script>
+        $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: 320
+        });
+    </script>
+</body>
+
+</html>

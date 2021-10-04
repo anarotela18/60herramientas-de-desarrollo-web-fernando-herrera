@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GALLERIA</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Estilos de la master -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../lib/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="galleria.min.js"></script>
+    <style>
+        .galleria {
+            width: 700px;
+            height: 400px;
+            background: #000
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Referencia de la libreria https://galleriajs.github.io/ </h1>
+    <a href="https://galleriajs.github.io/" target="_blank">https://galleriajs.github.io/</a>
+    <br>
+    <h2>Classic</h2>
+    <!-- <div class="galleria galleria1" style="margin-bottom: 30px;">
+        <img src="photo1.jpg">
+        <img src="photo2.jpeg">
+        <img src="photo3.jpeg">
+    </div> -->
+
+    <h2>Azur</h2>
+    <div class="galleria galleria2 mb-5">
+        <img src="photo1.jpg">
+        <img src="photo2.jpeg">
+        <img src="photo3.jpeg">
+    </div>
+    <script>
+        (function() {
+            // Galleria.loadTheme('themes/classic/galleria.classic.min.js');
+            // Galleria.run('.galleria1');
+
+            Galleria.loadTheme('themes/azur/galleria.azur.js');
+            Galleria.run('.galleria2');
+        }());
+    </script>
+</body>
+
+</html>
